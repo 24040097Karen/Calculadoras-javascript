@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de nómina</title>
+    <link rel="stylesheet" href="styles/style_nomina.css">
+    <script src="js/script_nomina.js" defer></script>
+</head>
+<body>
+    <form name="Registro" action="">
+        <h2>Registro de nómina</h2>
+        <label for="id">ID Empleado:</label>
+        <input type="number" name="id" id="id">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="horasTrabajadas">Horas trabajadas (semanas):</label>
+        <input type="number" name="horasTrabajadas" id="horasTrabajadas">
+
+        <label for="costoPorHora">Costo por hora:</label>
+        <input type="number" name="costoPorHora" id="costoPorHora">
+
+        <label for="horasNormales">Horas normales:</label>
+        <input type="number" name="horasNormales" id="horasNormales">
+
+        <label for="horasExtras">Horas extras:</label>
+        <input type="number" name="horasExtras" id="horasExtras">
+
+        <label for="subtotal">Subtotal:</label>
+        <input type="number" name="subtotal" id="subtotal" readonly>
+
+        <label for="ispt">ISPT (10%):</label>
+        <input type="number" name="ispt" id="ispt" readonly>
+
+        <label for="montoAPagar">Monto a pagar:</label>
+        <input type="number" name="montoAPagar" id="montoAPagar" readonly>
+
+        <div>
+            <input type="button" onclick="calcular()" value="Calcular nómina">
+            <input type="button" onclick="borrar()" value="Borrar">
+        </div>
+    </form>
+</body>
+</html>

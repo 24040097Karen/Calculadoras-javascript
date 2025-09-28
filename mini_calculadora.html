@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculadora</title>
+    <link rel="stylesheet" href="styles/style_calculadora.css">
+    <script src="js/script_calculadora.js" defer></script>
+</head>
+<body>
+   <form name="calculadora" action="">
+    <h2>Mini-Calculadora</h2>
+    <div class="inputs">
+      <input type="number" id="numero1" placeholder="Número">
+      <span id="operador"></span>
+      <input type="number" id="numero2" placeholder="Número">
+      <span>=</span>
+      <input type="text" id="resultado" readonly placeholder="Resultado">
+    </div>
+    <div class="buttons">
+      <input type="button" onclick="calcular('+')" value="+">
+      <input type="button" onclick="calcular('-')" value="-">
+      <input type="button" onclick="calcular('*')" value="×">
+      <input type="button" onclick="calcular('/')" value="÷">
+      <input type="button" onclick="borrar()" value="Limpiar" class="borrar">
+    </div>
+  </form>
+</body>
+</html>
