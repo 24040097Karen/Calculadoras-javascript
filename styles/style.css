@@ -1,62 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@400;600&display=swap');
+
 body {
-            font-family: Arial, sans-serif;
-            background: #f4f6f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+    font-family: 'Inter', sans-serif;
+    background: #F7F8FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
-        form {
-            background: #fff;
-            padding: 20px 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            width: 320px;
-            text-align: center;
-        }
+form {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 28px 24px;
+    width: 220px;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
 
-        label {
-            display: block;
-            margin: 12px 0 5px;
-            font-weight: bold;
-            color: #333;
-        }
+form:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
 
-        input[type="number"] {
-            width: 90%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            text-align: center;
-            font-size: 16px;
-        }
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    color: #9CA3AF;
+    text-transform: uppercase;
+    text-align: left;
+}
 
-        input[type="button"] {
-            padding: 10px 15px;
-            margin: 5px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
+input[type="number"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: #111827;
+    background: #FAFAFA;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.15s, background 0.15s;
+    margin-bottom: 14px;
+}
 
-        input[value="calcular cuadrado"] {
-            background: #4CAF50;
-            color: white;
-        }
-        input[value="calcular cuadrado"]:hover {
-            background: #45a049;
-        }
+input[type="number"]:focus {
+    border-color: #6366F1;
+    background: #ffffff;
+}
 
-        input[value="borrar"] {
-            background: #f44336;
-            color: white;
-        }
-        input[value="borrar"]:hover {
-            background: #da190b;
-        }
+input[type="button"] {
+    padding: 10px 8px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+    transition: opacity 0.15s, transform 0.1s;
+}
+
+input[type="button"]:active {
+    transform: scale(0.97);
+}
+
+input[type="button"]:hover {
+    opacity: 0.88;
+}
+
+input[value="calcular cuadrado"] {
+    background: #3B82F6;
+    color: #ffffff;
+}
+
+input[value="borrar"] {
+    background: transparent;
+    color: #9CA3AF;
+    border: 1.5px solid #E5E7EB;
+}
+
+input[value="borrar"]:hover {
+    border-color: #EF4444;
+    color: #EF4444;
+    opacity: 1;
+}
